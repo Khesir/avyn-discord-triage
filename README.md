@@ -38,8 +38,6 @@ The bot only runs while the app is open, and it only ever acts when explicitly t
 - GitHub issues are created via a direct call to the GitHub REST API using a stored PAT — no dependency on the `gh` CLI being installed and separately authenticated.
 - Every layer (Bot Service, Config Store, GitHub client, IPC contract, renderer components) was built test-first against a faked seam (a fake discord.js client, a fake HTTP layer, a temp-file store, a mocked IPC bridge) — there's no live Discord connection or real GitHub API call anywhere in the test suite.
 
-See [`issues/prd.md`](issues/prd.md) for the full product spec and [`docs/FEATURES.md`](docs/FEATURES.md) for a complete feature-by-feature reference of what's built.
-
 ---
 
 ## Tech stack
