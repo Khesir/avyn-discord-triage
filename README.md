@@ -105,18 +105,10 @@ src/
   preload/      # contextBridge APIs exposed to the renderer
   renderer/     # React UI (titlebar, sidebar, triage view, settings, console drawer)
   shared/       # Types shared across main / preload / renderer (the IPC contract)
-issues/         # This project's local issue tracker (backlog → ready → in-progress → qa → done)
-docs/           # Feature reference and other supporting docs
 ```
-
----
-
-## Project workflow
-
-This repo tracks its own work as local issue files under [`issues/`](issues/kanban.md), organized as a small kanban (`backlog` → `ready` → `in-progress` → `qa` → `done`), each issue written as a thin, independently-testable vertical slice. `issues/prd.md`, `issues/prd-ui-layout.md`, and `issues/prd-visual-design.md` are the three product-requirement documents behind the app's functionality, application shell, and visual design respectively.
 
 ---
 
 ## Status
 
-Actively in development. Core triage workflow (scan, review, approve/decline, remark, GitHub issue creation) and the full visual design pass are implemented and under test; see [`issues/kanban.md`](issues/kanban.md) for exactly what's in QA versus done.
+Actively in development. Core triage workflow (scan, review, approve/decline, remark, GitHub issue creation) and the full visual design pass are implemented and under test.
